@@ -26,3 +26,21 @@ kubectl create secret docker-registry air-key \
 ```
 kubectl create -f kubernetes
 ```
+
+## Deploying skyalrk api (backend)
+
+[Link to repo](https://github.com/whisklabs/skylark)
+
+```
+kubectl create -f kubernetes/skylark-api
+kubectl expose deployment skylark-dev
+kubectl expose deployment skylark
+```
+
+## Deploying frontend
+
+[Link to repo](https://github.com/whisklabs/air)
+
+```
+kubectl create -f kubernetes
+```
